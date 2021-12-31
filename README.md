@@ -13,6 +13,8 @@ Code part of course:https://www.linkedin.com/learning/spring-framework-in-depth-
 8) @Pointcut("@annotation(Loggable)")
 9) @Before
 10) @AfterReturning
+11) @Around
+12) ProceedingJoinPoint
 
 ## Tools
 1) Log4j
