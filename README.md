@@ -5,6 +5,8 @@ Code part of course:https://www.linkedin.com/learning/spring-framework-in-depth-
 ## Topics
 1) @PropertySource("classpath:application.properties")
 2) @Value
+3) @PropertySource
+4) @ComponentScan
 
 ## Tools
 
