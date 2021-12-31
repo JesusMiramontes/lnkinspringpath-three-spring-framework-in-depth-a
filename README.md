@@ -11,6 +11,8 @@ Code part of course:https://www.linkedin.com/learning/spring-framework-in-depth-
 6) @Retention(RetentionPolicy.RUNTIME)
 7) @EnableAspectJAutoProxy
 8) @Pointcut("@annotation(Loggable)")
+9) @Before
+10) @AfterReturning
 
 ## Tools
 1) Log4j
