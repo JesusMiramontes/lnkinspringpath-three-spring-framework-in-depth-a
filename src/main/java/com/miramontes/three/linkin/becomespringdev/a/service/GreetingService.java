@@ -1,5 +1,6 @@
 package com.miramontes.three.linkin.becomespringdev.a.service;
 
+import com.miramontes.three.linkin.becomespringdev.a.aspects.Loggable;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -9,6 +10,7 @@ public class GreetingService {
     @Value("${app.greeting}")
     private String greeting;
 
+    @Loggable
     public String getGreeting(String name){
         return greeting + " " + name;
     }
