@@ -10,3 +10,4 @@ Code part of course:https://www.linkedin.com/learning/spring-framework-in-depth-
 
 
 ### Notes
+* **Pass profile via params:** spring.profiles.active=dev

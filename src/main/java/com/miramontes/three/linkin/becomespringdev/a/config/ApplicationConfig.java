@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 import org.springframework.context.annotation.PropertySource;
 
 @Configuration
@@ -24,8 +25,17 @@ public class ApplicationConfig {
     private TimeService timeService;
 
     @Bean
+    @Profile("!dev")
     public TimeService timeService(){
+        System.out.println("prod");
         return new TimeService(true);
+    }
+
+    @Bean
+    @Profile("dev")
+    public TimeService timeService12(){
+        System.out.println("dev");
+        return new TimeService(false);
     }
 
     @Bean
